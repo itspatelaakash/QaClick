@@ -70,6 +70,9 @@ public class Listeners extends Base implements ITestListener {
 	@Override
 	public void onTestSkipped(ITestResult result) {
 		// TODO Auto-generated method stub
+		test.log(LogStatus.SKIP, result.getName().toUpperCase()+" Skipped the test as the Run mode is NO");
+		rep.endTest(test);
+		rep.flush();
 		
 	}
 

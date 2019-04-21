@@ -59,6 +59,31 @@ public class TestUtil extends Base {
         return data;
       }
 
+      //Reading if test is runnable or skiped for run from excel
+	public static boolean isTestRunnable(String testName, ExcelReader excel){
+
+		String sheetName="test_suite";
+		int rows = excel.getRowCount(sheetName);
+
+
+		for(int rNum=2; rNum<=rows; rNum++){
+
+			String testCase = excel.getCellData(sheetName, "TCID", rNum);
+
+			if(testCase.equalsIgnoreCase(testName)){
+
+				String runmode = excel.getCellData(sheetName, "Runmode", rNum);
+
+				if(runmode.equalsIgnoreCase("Y"))
+					return true;
+				else
+					return false;
+			}
+
+
+		}
+		return false;
+	}
 
 
 }

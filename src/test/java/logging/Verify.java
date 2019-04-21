@@ -16,7 +16,6 @@ public class Verify extends Base{
 		
 		try {
 			Assert.assertTrue(object);
-		
 		}catch(Exception e){
 			log.error(e.getMessage());
 			test.log(LogStatus.FAIL, "Verification Failed With : _"+e.getMessage());
