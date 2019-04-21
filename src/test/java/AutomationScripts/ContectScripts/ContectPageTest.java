@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.LogStatus;
 
 import base.Base;
+import logging.Verify;
 import uiComponents.Screens.ContectScreen;
 import uiComponents.Screens.QaHome;
 import utilities.RandomUtility;
@@ -21,13 +22,20 @@ public class ContectPageTest extends Base {
 	@Test
 	public void contectTest() throws Exception{
 		log.info("Logging Step");
-		elogger.log(LogStatus.INFO, "Entering details");
-
-		QaHome.getNavigation("Contact").click();
-		ContectScreen.getField("name").sendKeys("Aakash Patel");
-		ContectScreen.getField("message").sendKeys(RandomUtility.generateRandomString(150, Mode.ALPHA));
-		Assert.fail();
 		
+        test.log(LogStatus.INFO, "Clicking on Contect");
+		QaHome.getNavigation("Contact").click();
+		test.log(LogStatus.INFO, "Sending Name");
+		ContectScreen.getField("name").sendKeys("Aakash Patel");
+		test.log(LogStatus.INFO, "Sending Message");
+	
+		ContectScreen.getField("message").sendKeys(RandomUtility.generateRandomString(150, Mode.ALPHA));
+		log.info("Failing test");
+	   
+		Verify.verifyTrue(false);
+		
+		System.out.print("Soft verifications worked");
+		log.info("Logging Step");
 	}
 }
 

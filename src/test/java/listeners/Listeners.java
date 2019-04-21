@@ -23,32 +23,29 @@ public class Listeners extends Base implements ITestListener {
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 		
-		Base.elogger= rep.startTest(result.getName());
-		
+		System.out.println("On Test Start"+result.getName());
+		test=rep.startTest(result.getName());
 		
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		
+		System.out.println("On Test Success"+result.getName());
 		
-		elogger.log(LogStatus.INFO,result.getName()+"_Passed" );
-		
-	    Base.elogger.log(LogStatus.PASS, result.getName().toUpperCase()+"PASS");
-		Base.rep.endTest(Base.elogger);
-		Base.rep.flush();
-		
-		
+	    test.log(LogStatus.PASS, result.getName()+" PASSED");
+		rep.endTest(test);
+		rep.flush();
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		
 		Reporter.log("Capturing Screenshot");
-		elogger.log(LogStatus.INFO,result.getName()+"_Failed" );
+		System.out.println("On Test Fail"+result.getName());
+		
 	
 		try {
-			
 			TestUtil.takeScreenShot(result.getName());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -63,13 +60,10 @@ public class Listeners extends Base implements ITestListener {
 	  
 		
 		//Adding ExtentReport
-		elogger.log(LogStatus.FAIL, result.getName().toUpperCase(), result.getThrowable()); // adding ststus,TestCase name, Stack trace
-		elogger.log(LogStatus.INFO, "Capturing ScreenShot");
-		elogger.log(LogStatus.FAIL, elogger.addScreenCapture(TestUtil.screenShotName)); // adding screenshots using ExtentReports
-		
-		rep.endTest(elogger); //ending report
-		rep.flush();// updating info in report
-		
+		test.log(LogStatus.FAIL, result.getName()+"FAILED with exception"+result.getThrowable());
+		test.log(LogStatus.FAIL, test.addScreenCapture(TestUtil.screenShotpath));
+		rep.endTest(test);
+		rep.flush();
 		
 	}
 

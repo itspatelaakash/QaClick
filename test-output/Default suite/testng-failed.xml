@@ -17,13 +17,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- AutomationScripts.ContectScripts.ContectPageTest -->
-      <class name="AutomationScripts.ContectScripts.ContectDetailsTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="contectFillDetails"/>
-        </methods>
-      </class> <!-- AutomationScripts.ContectScripts.ContectDetailsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

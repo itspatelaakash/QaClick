@@ -27,6 +27,7 @@ import uiComponents.Screens.QaHome;
 import utilities.ExcelReader;
 import utilities.ExtentManager;
 
+
 public class Base {
 	public static WebDriver driver;
 	Properties prop = new Properties();
@@ -37,8 +38,9 @@ public class Base {
 	public static ExcelReader excel = new ExcelReader("C:\\Study\\QaClick_DataProvider.xlsx");
 	
 	//ExtentReport intances
-	public static ExtentReports rep = ExtentManager.getInstance(); // geting instance from utility ExtentManager
-	public static ExtentTest elogger;
+	public ExtentReports rep = ExtentManager.getInstance();
+	public static ExtentTest test;
+	
 	
 
 	@BeforeMethod

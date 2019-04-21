@@ -4,16 +4,19 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="3.209">
+           time="1.526">
   <properties />
-            <testcase name="contectTest" time="3.209" classname="AutomationScripts.ContectScripts.ContectPageTest">
+            <testcase name="contectTest" time="1.526" classname="AutomationScripts.ContectScripts.ContectPageTest">
                 <failure type="java.lang.AssertionError"
-                  message="null"
+                  message="expected [true] but found [false]"
               >
-<![CDATA[java.lang.AssertionError: null
+<![CDATA[java.lang.AssertionError: expected [true] but found [false]
   org.testng.Assert.fail(Assert.java:96)
-  org.testng.Assert.fail(Assert.java:103)
-  AutomationScripts.ContectScripts.ContectPageTest.contectTest(ContectPageTest.java:29)
+  org.testng.Assert.failNotEquals(Assert.java:776)
+  org.testng.Assert.assertTrue(Assert.java:44)
+  org.testng.Assert.assertTrue(Assert.java:54)
+  logging.Verify.verifyTrue(Verify.java:18)
+  AutomationScripts.ContectScripts.ContectPageTest.contectTest(ContectPageTest.java:35)
   java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

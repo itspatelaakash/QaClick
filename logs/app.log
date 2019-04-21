@@ -1,1 +1,12 @@
-16:04:00.088 INFO  Base -Logging Step
+21:44:54.958 INFO  CommonDataProviderTest -Test
+21:44:56.549 INFO  CommonDataProviderTest -Test
+21:45:01.685 INFO  CommonDataProviderTest -Test
+21:45:42.022 INFO  CommonDataProviderTest -Test
+21:45:54.198 INFO  CommonDataProviderTest -Test
+21:45:59.328 INFO  CommonDataProviderTest -Test
+21:46:54.232 INFO  Base -Logging Step
+21:47:06.361 INFO  Base -Worked
+21:47:22.427 DEBUG Base -Debuged
+21:48:03.988 INFO  Base -Worked
+21:48:26.737 INFO  Base -Worked
+21:49:34.436 INFO  Base -Worked

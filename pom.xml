@@ -5,6 +5,8 @@
 	<groupId>com.qca</groupId>
 	<artifactId>QaClickAcademy</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
+	
 
 
 
@@ -123,6 +125,16 @@
 			</resource>
 
 		</resources>
+		
+		<testResources>
+           <testResource>
+				<directory>src/test/resources</directory>
+				<includes>
+					<include>log4j2.xml</include>
+					
+				</includes>
+			</testResource>
+    </testResources>
 
 
 		<pluginManagement>
@@ -138,7 +150,7 @@
 					<version>2.14.1</version>
 					<configuration>
 						<suiteXmlFiles>
-							<suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+							<suiteXmlFile>src/test/resources/properties/testng.xml</suiteXmlFile>
 				         </suiteXmlFiles>
 					</configuration>
 				</plugin>

@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Aakash1.patel\eclipse-workspace\QaClickAcademy\src\test\resources\testng.xml</span>
+                    <span>C:\Users\Aakash1.patel\eclipse-workspace\QaClickAcademy\QaClick\src\test\resources\properties\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -114,6 +114,16 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationScripts.ContectScripts.CommonDataProviderTest" class="method navigator-link" hash-for-method="commonDataProviderTest(Jon, jon@gmail.com, 123.0)">commonDataProviderTest(Jon, jon@gmail.com, 123.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="AutomationScripts.ContectScripts.CommonDataProviderTest" class="method navigator-link" hash-for-method="commonDataProviderTest(Snow, snow@gmail.com, 456.0)">commonDataProviderTest(Snow, snow@gmail.com, 456.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="AutomationScripts.ContectScripts.ContectDetailsTest" class="method navigator-link" hash-for-method="contectFillDetails(Aakash, abc@gmail.com, 1.23456789E9)">contectFillDetails(Aakash, abc@gmail.com, 1.23456789E9)</a> <!-- method navigator-link -->
@@ -147,9 +157,10 @@
                   <a name="contectTest">
                   </a> <!-- contectTest -->
                   <span class="method-name">contectTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: null
-	at AutomationScripts.ContectScripts.ContectPageTest.contectTest(ContectPageTest.java:29)
-... Removed 27 stack frames
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at logging.Verify.verifyTrue(Verify.java:18)
+	at AutomationScripts.ContectScripts.ContectPageTest.contectTest(ContectPageTest.java:35)
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -179,10 +190,34 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AutomationScripts.ContectScripts.CommonDataProviderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="commonDataProviderTest(Jon, jon@gmail.com, 123.0)">
+                  </a> <!-- commonDataProviderTest(Jon, jon@gmail.com, 123.0) -->
+                  <span class="method-name">commonDataProviderTest</span>
+                  <span class="parameters">(Jon, jon@gmail.com, 123.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="commonDataProviderTest(Snow, snow@gmail.com, 456.0)">
+                  </a> <!-- commonDataProviderTest(Snow, snow@gmail.com, 456.0) -->
+                  <span class="method-name">commonDataProviderTest</span>
+                  <span class="parameters">(Snow, snow@gmail.com, 456.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Aakash1.patel\eclipse-workspace\QaClickAcademy\src\test\resources\testng.xml</span>
+            <span class="header-content">C:\Users\Aakash1.patel\eclipse-workspace\QaClickAcademy\QaClick\src\test\resources\properties\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -199,6 +234,7 @@
       &lt;class name=&quot;base.Base&quot;/&gt;
       &lt;class name=&quot;AutomationScripts.ContectScripts.ContectPageTest&quot;/&gt;
       &lt;class name=&quot;AutomationScripts.ContectScripts.ContectDetailsTest&quot;/&gt;
+      &lt;class name=&quot;AutomationScripts.ContectScripts.CommonDataProviderTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -212,7 +248,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -238,24 +274,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'contectFillDetails')
-data.setCell(0, 2, 'AutomationScripts.ContectScripts.ContectDetailsTest')
-data.setCell(0, 3, 9595);
+data.setCell(0, 1, 'commonDataProviderTest')
+data.setCell(0, 2, 'AutomationScripts.ContectScripts.CommonDataProviderTest')
+data.setCell(0, 3, 10823);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'contectFillDetails')
-data.setCell(1, 2, 'AutomationScripts.ContectScripts.ContectDetailsTest')
-data.setCell(1, 3, 6697);
+data.setCell(1, 1, 'commonDataProviderTest')
+data.setCell(1, 2, 'AutomationScripts.ContectScripts.CommonDataProviderTest')
+data.setCell(1, 3, 5945);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'contectTest')
-data.setCell(2, 2, 'AutomationScripts.ContectScripts.ContectPageTest')
-data.setCell(2, 3, 3209);
+data.setCell(2, 1, 'contectFillDetails')
+data.setCell(2, 2, 'AutomationScripts.ContectScripts.ContectDetailsTest')
+data.setCell(2, 3, 5907);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'contectFillDetails')
+data.setCell(3, 2, 'AutomationScripts.ContectScripts.ContectDetailsTest')
+data.setCell(3, 3, 5818);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'contectTest')
+data.setCell(4, 2, 'AutomationScripts.ContectScripts.ContectPageTest')
+data.setCell(4, 3, 1526);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -270,10 +314,10 @@ return data;
               <span class="reporter-method-name">contectTest</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Capturing Screenshot</span>
-                <span class="reporter-method-output"><a target="_blank" href=Fri_Apr_19_16_04_03_IST_2019_contectTest.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><a target="_blank" href=Sun_Apr_21_21_26_47_IST_2019_contectTest.jpg>Screenshot</a></span>
                 <span class="reporter-method-output"><br></span>
                 <span class="reporter-method-output"><br></span>
-                <span class="reporter-method-output"><a target="_blank" href=Fri_Apr_19_16_04_03_IST_2019_contectTest.jpg><img src=Fri_Apr_19_16_04_03_IST_2019_contectTest.jpg height=200 width=200></img></a></span>
+                <span class="reporter-method-output"><a target="_blank" href=Sun_Apr_21_21_26_47_IST_2019_contectTest.jpg><img src=Sun_Apr_21_21_26_47_IST_2019_contectTest.jpg height=200 width=200></img></a></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -300,38 +344,65 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">contectTest</span>
-                <span class="method-start">10761 ms</span>
+                <span class="method-start">9286 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14821 ms</span>
+                <span class="method-start">11320 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">AutomationScripts.ContectScripts.ContectDetailsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">15681 ms</span>
+                <span class="method-start">12019 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">contectFillDetails(Aakash, abc@gmail.com, 1.23456789E9)</span>
-                <span class="method-start">24948 ms</span>
+                <span class="method-start">20879 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">31717 ms</span>
+                <span class="method-start">26722 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">32532 ms</span>
+                <span class="method-start">27424 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">contectFillDetails(Yash, xyz@gmail.com, 9.87654321E8)</span>
-                <span class="method-start">41632 ms</span>
+                <span class="method-start">35597 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">51278 ms</span>
+                <span class="method-start">41540 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AutomationScripts.ContectScripts.CommonDataProviderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">42251 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">commonDataProviderTest(Jon, jon@gmail.com, 123.0)</span>
+                <span class="method-start">83164 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">94020 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">94736 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">commonDataProviderTest(Snow, snow@gmail.com, 456.0)</span>
+                <span class="method-start">104763 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">110730 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Capturing Screenshot]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Fri_Apr_19_16_04_03_IST_2019_contectTest.jpg>Screenshot</a>]]>
+      <![CDATA[<a target="_blank" href=Sun_Apr_21_21_26_47_IST_2019_contectTest.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
@@ -14,19 +14,19 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href=Fri_Apr_19_16_04_03_IST_2019_contectTest.jpg><img src=Fri_Apr_19_16_04_03_IST_2019_contectTest.jpg height=200 width=200></img></a>]]>
+      <![CDATA[<a target="_blank" href=Sun_Apr_21_21_26_47_IST_2019_contectTest.jpg><img src=Sun_Apr_21_21_26_47_IST_2019_contectTest.jpg height=200 width=200></img></a>]]>
     </line>
   </reporter-output>
-  <suite started-at="2019-04-19T10:33:49Z" name="Suite" finished-at="2019-04-19T10:34:41Z" duration-ms="52383">
+  <suite started-at="2019-04-21T15:56:36Z" name="Suite" finished-at="2019-04-21T15:58:28Z" duration-ms="111429">
     <groups>
     </groups>
-    <test started-at="2019-04-19T10:33:49Z" name="Test" finished-at="2019-04-19T10:34:41Z" duration-ms="52383">
+    <test started-at="2019-04-21T15:56:36Z" name="Test" finished-at="2019-04-21T15:58:28Z" duration-ms="111429">
       <class name="AutomationScripts.ContectScripts.ContectDetailsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:AutomationScripts.ContectScripts.ContectDetailsTest@2e3a5237]" started-at="2019-04-19T10:34:04Z" name="setUp" finished-at="2019-04-19T10:34:14Z" duration-ms="9267" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AutomationScripts.ContectScripts.ContectDetailsTest@1136b469]" started-at="2019-04-21T15:56:48Z" name="setUp" finished-at="2019-04-21T15:56:57Z" duration-ms="8860" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="contectFillDetails(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AutomationScripts.ContectScripts.ContectDetailsTest@2e3a5237]" started-at="2019-04-19T10:34:14Z" name="contectFillDetails" data-provider="getData" finished-at="2019-04-19T10:34:20Z" duration-ms="6697" status="PASS">
+        <test-method signature="contectFillDetails(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AutomationScripts.ContectScripts.ContectDetailsTest@1136b469]" started-at="2019-04-21T15:56:57Z" name="contectFillDetails" data-provider="getData" finished-at="2019-04-21T15:57:03Z" duration-ms="5818" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -47,15 +47,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contectFillDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AutomationScripts.ContectScripts.ContectDetailsTest@2e3a5237]" started-at="2019-04-19T10:34:20Z" name="tearDown" finished-at="2019-04-19T10:34:21Z" duration-ms="814" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AutomationScripts.ContectScripts.ContectDetailsTest@1136b469]" started-at="2019-04-21T15:57:03Z" name="tearDown" finished-at="2019-04-21T15:57:04Z" duration-ms="701" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:AutomationScripts.ContectScripts.ContectDetailsTest@2e3a5237]" started-at="2019-04-19T10:34:21Z" name="setUp" finished-at="2019-04-19T10:34:30Z" duration-ms="9100" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AutomationScripts.ContectScripts.ContectDetailsTest@1136b469]" started-at="2019-04-21T15:57:04Z" name="setUp" finished-at="2019-04-21T15:57:12Z" duration-ms="8173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="contectFillDetails(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AutomationScripts.ContectScripts.ContectDetailsTest@2e3a5237]" started-at="2019-04-19T10:34:30Z" name="contectFillDetails" data-provider="getData" finished-at="2019-04-19T10:34:40Z" duration-ms="9595" status="PASS">
+        <test-method signature="contectFillDetails(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AutomationScripts.ContectScripts.ContectDetailsTest@1136b469]" started-at="2019-04-21T15:57:12Z" name="contectFillDetails" data-provider="getData" finished-at="2019-04-21T15:57:18Z" duration-ms="5907" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -76,26 +76,89 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contectFillDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AutomationScripts.ContectScripts.ContectDetailsTest@2e3a5237]" started-at="2019-04-19T10:34:40Z" name="tearDown" finished-at="2019-04-19T10:34:41Z" duration-ms="1092" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AutomationScripts.ContectScripts.ContectDetailsTest@1136b469]" started-at="2019-04-21T15:57:18Z" name="tearDown" finished-at="2019-04-21T15:57:19Z" duration-ms="709" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- AutomationScripts.ContectScripts.ContectDetailsTest -->
-      <class name="AutomationScripts.ContectScripts.ContectPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:AutomationScripts.ContectScripts.ContectPageTest@72ba28ee]" started-at="2019-04-19T10:33:49Z" name="setUp" finished-at="2019-04-19T10:34:00Z" duration-ms="10761" status="PASS">
+      <class name="AutomationScripts.ContectScripts.CommonDataProviderTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AutomationScripts.ContectScripts.CommonDataProviderTest@6579c3d9]" started-at="2019-04-21T15:57:19Z" name="setUp" finished-at="2019-04-21T15:58:00Z" duration-ms="40913" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="contectTest()[pri:0, instance:AutomationScripts.ContectScripts.ContectPageTest@72ba28ee]" started-at="2019-04-19T10:34:00Z" name="contectTest" finished-at="2019-04-19T10:34:03Z" duration-ms="3209" status="FAIL">
+        <test-method signature="commonDataProviderTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AutomationScripts.ContectScripts.CommonDataProviderTest@6579c3d9]" started-at="2019-04-21T15:58:00Z" name="commonDataProviderTest" data-provider="TestDP" finished-at="2019-04-21T15:58:10Z" duration-ms="10823" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jon]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[jon@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- commonDataProviderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AutomationScripts.ContectScripts.CommonDataProviderTest@6579c3d9]" started-at="2019-04-21T15:58:10Z" name="tearDown" finished-at="2019-04-21T15:58:11Z" duration-ms="716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AutomationScripts.ContectScripts.CommonDataProviderTest@6579c3d9]" started-at="2019-04-21T15:58:11Z" name="setUp" finished-at="2019-04-21T15:58:21Z" duration-ms="10027" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="commonDataProviderTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:AutomationScripts.ContectScripts.CommonDataProviderTest@6579c3d9]" started-at="2019-04-21T15:58:21Z" name="commonDataProviderTest" data-provider="TestDP" finished-at="2019-04-21T15:58:27Z" duration-ms="5945" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Snow]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[snow@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[456.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- commonDataProviderTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AutomationScripts.ContectScripts.CommonDataProviderTest@6579c3d9]" started-at="2019-04-21T15:58:27Z" name="tearDown" finished-at="2019-04-21T15:58:28Z" duration-ms="684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AutomationScripts.ContectScripts.CommonDataProviderTest -->
+      <class name="AutomationScripts.ContectScripts.ContectPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AutomationScripts.ContectScripts.ContectPageTest@17ae7628]" started-at="2019-04-21T15:56:36Z" name="setUp" finished-at="2019-04-21T15:56:46Z" duration-ms="9286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="contectTest()[pri:0, instance:AutomationScripts.ContectScripts.ContectPageTest@17ae7628]" started-at="2019-04-21T15:56:46Z" name="contectTest" finished-at="2019-04-21T15:56:47Z" duration-ms="1526" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[null]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.fail(Assert.java:103)
-at AutomationScripts.ContectScripts.ContectPageTest.contectTest(ContectPageTest.java:29)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at logging.Verify.verifyTrue(Verify.java:18)
+at AutomationScripts.ContectScripts.ContectPageTest.contectTest(ContectPageTest.java:35)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -129,7 +192,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <![CDATA[Capturing Screenshot]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Fri_Apr_19_16_04_03_IST_2019_contectTest.jpg>Screenshot</a>]]>
+              <![CDATA[<a target="_blank" href=Sun_Apr_21_21_26_47_IST_2019_contectTest.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
@@ -138,11 +201,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href=Fri_Apr_19_16_04_03_IST_2019_contectTest.jpg><img src=Fri_Apr_19_16_04_03_IST_2019_contectTest.jpg height=200 width=200></img></a>]]>
+              <![CDATA[<a target="_blank" href=Sun_Apr_21_21_26_47_IST_2019_contectTest.jpg><img src=Sun_Apr_21_21_26_47_IST_2019_contectTest.jpg height=200 width=200></img></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- contectTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AutomationScripts.ContectScripts.ContectPageTest@72ba28ee]" started-at="2019-04-19T10:34:04Z" name="tearDown" finished-at="2019-04-19T10:34:04Z" duration-ms="824" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AutomationScripts.ContectScripts.ContectPageTest@17ae7628]" started-at="2019-04-21T15:56:48Z" name="tearDown" finished-at="2019-04-21T15:56:48Z" duration-ms="681" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

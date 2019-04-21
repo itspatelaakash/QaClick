@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Apr 19 16:03:49 IST 2019</td>
+<td>Started on:</td><td>Sun Apr 21 21:26:36 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>52 seconds (52383 ms)</td>
+<tr><td>Total time:</td><td>111 seconds (111429 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,24 +76,28 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='AutomationScripts.ContectScripts.ContectPageTest.contectTest()'><b>contectTest</b><br>Test class: AutomationScripts.ContectScripts.ContectPageTest<br/>
-<a href="#Output-1977189075" onClick='toggleBox("Output-1977189075", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-246168102" onClick='toggleBox("Output-246168102", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1977189075" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1977189075">
+<a href="#Output-246168102" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-246168102">
 Capturing Screenshot<br/>
-<a target="_blank" href=Fri_Apr_19_16_04_03_IST_2019_contectTest.jpg>Screenshot</a><br/>
+<a target="_blank" href=Sun_Apr_21_21_26_47_IST_2019_contectTest.jpg>Screenshot</a><br/>
 <br><br/>
 <br><br/>
-<a target="_blank" href=Fri_Apr_19_16_04_03_IST_2019_contectTest.jpg><img src=Fri_Apr_19_16_04_03_IST_2019_contectTest.jpg height=200 width=200></img></a><br/>
+<a target="_blank" href=Sun_Apr_21_21_26_47_IST_2019_contectTest.jpg><img src=Sun_Apr_21_21_26_47_IST_2019_contectTest.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: null
-	at AutomationScripts.ContectScripts.ContectPageTest.contectTest(ContectPageTest.java:29)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1977189075", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1977189075'><pre>java.lang.AssertionError: null
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at logging.Verify.verifyTrue(Verify.java:18)
+	at AutomationScripts.ContectScripts.ContectPageTest.contectTest(ContectPageTest.java:35)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace246168102", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace246168102'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.fail(Assert.java:103)
-	at AutomationScripts.ContectScripts.ContectPageTest.contectTest(ContectPageTest.java:29)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at logging.Verify.verifyTrue(Verify.java:18)
+	at AutomationScripts.ContectScripts.ContectPageTest.contectTest(ContectPageTest.java:35)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -120,8 +124,8 @@ Capturing Screenshot<br/>
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>3</td>
-<td>AutomationScripts.ContectScripts.ContectPageTest@72ba28ee</td></tr>
+<td>1</td>
+<td>AutomationScripts.ContectScripts.ContectPageTest@17ae7628</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -131,15 +135,25 @@ Capturing Screenshot<br/>
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='AutomationScripts.ContectScripts.CommonDataProviderTest.commonDataProviderTest()'><b>commonDataProviderTest</b><br>Test class: AutomationScripts.ContectScripts.CommonDataProviderTest<br>Parameters: Jon, jon@gmail.com, 123.0</td>
+<td></td>
+<td>10</td>
+<td>AutomationScripts.ContectScripts.CommonDataProviderTest@6579c3d9</td></tr>
+<tr>
+<td title='AutomationScripts.ContectScripts.CommonDataProviderTest.commonDataProviderTest()'><b>commonDataProviderTest</b><br>Test class: AutomationScripts.ContectScripts.CommonDataProviderTest<br>Parameters: Snow, snow@gmail.com, 456.0</td>
+<td></td>
+<td>5</td>
+<td>AutomationScripts.ContectScripts.CommonDataProviderTest@6579c3d9</td></tr>
+<tr>
 <td title='AutomationScripts.ContectScripts.ContectDetailsTest.contectFillDetails()'><b>contectFillDetails</b><br>Test class: AutomationScripts.ContectScripts.ContectDetailsTest<br>Parameters: Aakash, abc@gmail.com, 1.23456789E9</td>
 <td></td>
-<td>6</td>
-<td>AutomationScripts.ContectScripts.ContectDetailsTest@2e3a5237</td></tr>
+<td>5</td>
+<td>AutomationScripts.ContectScripts.ContectDetailsTest@1136b469</td></tr>
 <tr>
 <td title='AutomationScripts.ContectScripts.ContectDetailsTest.contectFillDetails()'><b>contectFillDetails</b><br>Test class: AutomationScripts.ContectScripts.ContectDetailsTest<br>Parameters: Yash, xyz@gmail.com, 9.87654321E8</td>
 <td></td>
-<td>9</td>
-<td>AutomationScripts.ContectScripts.ContectDetailsTest@2e3a5237</td></tr>
+<td>5</td>
+<td>AutomationScripts.ContectScripts.ContectDetailsTest@1136b469</td></tr>
 </table><p>
 </body>
 </html>
