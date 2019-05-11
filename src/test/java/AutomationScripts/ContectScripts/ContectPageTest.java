@@ -23,7 +23,7 @@ public class ContectPageTest extends Base {
 	public static Logger log = LogManager.getLogger(Base.class.getName());
 	@Test
 	public void contectPageTest() throws Exception{
-		if(!(TestUtil.isTestRunnable("openAccountTest", excel))){
+		if(!(TestUtil.isTestRunnable("contectPageTest", excel))){
 			throw new SkipException("Skipping the test "+"contectPageTest".toUpperCase()+ "as the Run mode is NO");
 		}
 
